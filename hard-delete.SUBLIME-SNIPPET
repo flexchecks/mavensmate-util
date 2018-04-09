@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+if(!${1:idsToDelete}.isEmpty()) {
+	Database.delete($1);
+	Database.emptyRecycleBin($1);
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>hard-delete</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.apex</scope>
+</snippet>

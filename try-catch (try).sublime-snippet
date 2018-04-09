@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+try {
+	$1
+} catch(Exception whoops) {
+	$2
+}
+]]></content>
+	<tabTrigger>try</tabTrigger>
+	<scope>source.apex, source.java, source.js</scope>
+</snippet>

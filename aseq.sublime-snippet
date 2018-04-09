@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+System.assertEquals(${1:null}, ${2:value});
+]]></content>
+    <tabTrigger>aseq</tabTrigger>
+    <scope>source.apex, source.java, source.js</scope>
+</snippet>

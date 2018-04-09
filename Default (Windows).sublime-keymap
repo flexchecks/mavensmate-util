@@ -1,0 +1,103 @@
+[
+	{
+		"keys": ["ctrl+shift+alt+s"], 
+		"command": "save_all"
+	},
+	{
+		"keys": ["ctrl+shift+alt+,"], 
+		"command": "add_date" 
+	},
+	{
+		"keys": ["ctrl+shift+alt+."], 
+		"command": "add_time" 
+	},
+	{
+		"keys": ["ctrl+shift+alt+t"], 
+		"command": "wrap_selection_as_title"
+	},
+	{
+		"keys": ["ctrl+shift+alt+v"], 
+		"command": "add_current_version"
+	},
+	{
+		"keys": ["ctrl+shift+alt+d"], 
+		"command": "add_description_comment"
+	},
+	{
+		"keys": ["ctrl+shift+alt+e"], 
+		"command": "add_exception_class"
+	},
+	{
+		"keys": ["ctrl+shift+alt+i"], 
+		"command": "add_inner_class"
+	},
+	{
+		"keys": ["ctrl+shift+alt+h"], 
+		"command": "add_inner_class_comment"
+	},
+	{
+		"keys": ["ctrl+shift+alt+m"], 
+		"command": "add_method_comment"
+	},
+	{
+		"keys": ["ctrl+shift+alt+/"], 
+		"command": "add_variable_comment"
+	},
+	{
+		"keys": ["ctrl+shift+alt+n"], 
+		"command": "add_test_method"
+	},
+	{
+		"keys": ["ctrl+shift+alt+l"], 
+		"command": "format_as_section_title"
+	},
+	/* Symbols */
+	{
+		"keys": ["ctrl+shift+alt+up"], 
+		"command": "insert_snippet",
+		"args": { "contents": "↑" }
+	},
+	{
+		"keys": ["ctrl+shift+alt+right"], 
+		"command": "insert_snippet",
+		"args": { "contents": "→" }
+	},
+	{
+		"keys": ["ctrl+shift+alt+down"], 
+		"command": "insert_snippet",
+		"args": { "contents": "↓" }
+	},
+	{
+		"keys": ["ctrl+shift+alt+left"], 
+		"command": "insert_snippet",
+		"args": { "contents": "←" }
+	},
+	{
+		"keys": ["ctrl+shift+alt+a"], 
+		"command": "insert_snippet",
+		"args": { "contents": "∀" }
+	},
+	{
+		"keys": ["ctrl+shift+alt+b"], 
+		"command": "insert_snippet",
+		"args": { "contents": "•" }
+	},
+	{
+		"keys": ["ctrl+shift+alt+q"], 
+		"command": "format_as_figlet"
+	},
+	{
+		"keys": [","], 
+		"command": "insert_snippet",
+		"args": { "contents": ", " }
+	},
+	{
+		"keys": ["alt+,"], 
+		"command": "insert_snippet",
+		"args": { "contents": "," }
+	}, 
+	{
+		"keys": ["ctrl+shift+alt+keypad_minus"], 
+		"command": "increment_console_version"
+	}
+]

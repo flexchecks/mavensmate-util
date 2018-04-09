@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+System.assertNotEquals(${1:null}, ${2:value});
+]]></content>
+    <tabTrigger>asneq</tabTrigger>
+    <scope>source.apex, source.java, source.js</scope>
+</snippet>
