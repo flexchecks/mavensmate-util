@@ -378,26 +378,12 @@ class FormatAsFiglet(sublime_plugin.TextCommand):
     def run(self, edit):
         # Decorate each region.
         view = self.view
-        regions = len(view.sel())
-        print("regions: ", regions)
-        i = -1
         for region in view.sel():
-            i += 1
-            print("i: ", i)
             if not region.empty():
-                print("region is not empty")
                 # Pad inside selected region.
                 title = view.substr(region)
-                print("title: ", title)
-                FormatAsFiglet.lines_to_insert.extend(FormatAsFiglet.get_lines(title))
-                view.erase(edit, region)
-                isInsertingSnippet = i == regions - 1
-        for region in view.sel():
-            view.sel().subtract(region)
-        for region in view.sel():
-            view.sel().subtract(region)
-        if isInsertingSnippet:
-            view.run_command("insert_snippet", { "contents": "\n".join(FormatAsFiglet.lines_to_insert)})
+                view.replace(edit, region, "");
+                view.run_command("insert_snippet", { "contents": FormatAsFiglet.format(title)}) 
 
 class AddDateCommand(sublime_plugin.TextCommand):
     @staticmethod
